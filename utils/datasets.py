@@ -651,7 +651,7 @@ class LoadImagesAndLabels9(Dataset):  # for training/testing
 
         def img2label_paths(img_paths):
             # Define label paths as a function of image paths
-            sa, sb = os.sep + 'kaggle' + os.sep+ 'input' + os.sep, os.sep + 'tmp' + os.sep #Edit for kaggle, because kaggle's a weird platform and I haven't quite figure out how input and data works on kaggle
+            sa, sb = os.sep + 'images' + os.sep, os.sep + 'labels' + os.sep  # /images/, /labels/ substrings
             return [x.replace(sa, sb, 1).replace(x.split('.')[-1], 'txt') for x in img_paths]
 
         try:
