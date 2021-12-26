@@ -92,6 +92,7 @@ def test(data,
         #import wandb  # Weights & Biases
     #except ImportError:
         #log_imgs = 0
+    log_imgs = 0
 
     # Dataloader
     if not training:
